@@ -16,6 +16,9 @@
   margin: auto;
   width: 1440px;
 }
+.cards {
+  margin-top: 1rem;
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -30,13 +33,13 @@
 }
 
 .square {
-  height: 50px;
-  width: 50px;
   background-color: white;
   position: absolute;
   right: 0;
   top: 25px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .heart {
@@ -45,31 +48,35 @@
 
 .red {
   background-color: red;
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  height: 25px;
-  width: 40px;
-  color: white;
+  float: left;
+  padding: 5px;
 }
+
 .green {
   background-color: green;
-  position: absolute;
-  bottom: 40px;
-  left: 12%;
-  height: 25px;
-  width: 90px;
-  color: white;
+  float: left;
+  padding: 5px;
+  margin-left: 5px;
 }
-/* .discount {
+.discount {
   position: absolute;
-  left: 10%;
-  top: 15%;
-  font-size: 0.75rem;
-  text-align: center;
+  left: 0;
+  bottom: 15%;
   color: white;
-  margin: auto;
-} */
+  text-align: center;
+}
+
+.type {
+  font-weight: 700;
+}
+.price {
+  color: red;
+}
+.before {
+  color: black;
+  text-decoration: line-through;
+}
+
 .card_one,
 .card_three {
   float: left;

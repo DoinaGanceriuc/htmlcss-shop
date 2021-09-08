@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.debug .container {
+  height: 800px;
+  background-color: red;
+}
+.container {
+  margin: auto;
+  width: 1440px;
+}
+.cards {
+  margin: 1rem;
+  padding: 0 10rem;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  float: left;
+  position: relative;
+}
+
+.square {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heart {
+  font-size: 2rem;
+}
+
+.red {
+  background-color: #eb0037;
+  float: left;
+  padding: 5px;
+}
+
+.green {
+  background-color: #00875a;
+  float: left;
+  padding: 5px;
+  margin-left: 5px;
+}
+.green.last {
+  margin-left: 0;
+}
+
+.discount {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  color: white;
+  text-align: center;
+}
+
+.type {
+  font-weight: 700;
+}
+.price {
+  color: #ff0000;
+}
+.before {
+  color: black;
+  text-decoration: line-through;
+}
+
+.card2,
+.card5 {
+  margin: 0 0.5rem;
+}
+
+.models {
+  height: 512px;
+  width: 100%;
+}
+
+.models_b {
+  height: 512px;
+  width: 100%;
+  display: none;
+}
+
+.card1:hover .models_b,
+.card2:hover .models_b,
+.card3:hover .models_b,
+.card4:hover .models_b,
+.card5:hover .models_b,
+.card6:hover .models_b {
+  display: block;
+}
+
+.card1:hover .models,
+.card2:hover .models,
+.card3:hover .models,
+.card4:hover .models,
+.card5:hover .models,
+.card6:hover .models {
+  display: none;
+}

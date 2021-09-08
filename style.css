@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  width: 1440px;
+} */
+
+.debug .container {
+  height: 800px;
+  background-color: red;
+}
+.container {
+  margin: auto;
+  width: 1440px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card_one,
+.card_two,
+.card_three {
+  float: left;
+  position: relative;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  text-align: center;
+}
+
+.heart {
+  font-size: 2rem;
+}
+
+.red {
+  background-color: red;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  height: 25px;
+  width: 40px;
+  color: white;
+}
+.green {
+  background-color: green;
+  position: absolute;
+  bottom: 40px;
+  left: 12%;
+  height: 25px;
+  width: 90px;
+  color: white;
+}
+/* .discount {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  font-size: 0.75rem;
+  text-align: center;
+  color: white;
+  margin: auto;
+} */
+.card_one,
+.card_three {
+  float: left;
+}
+
+.card_two {
+  margin: 0 0.5rem;
+}
+
+.levis,
+.verde,
+.guess {
+  height: 512px;
+  width: 100%;
+}

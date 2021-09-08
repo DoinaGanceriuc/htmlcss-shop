@@ -3,11 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* body {
-  width: 1440px;
-} */
-
 .debug .container {
   height: 800px;
   background-color: red;
@@ -17,7 +12,8 @@
   width: 1440px;
 }
 .cards {
-  margin-top: 1rem;
+  margin: 1rem;
+  padding: 0 10rem;
 }
 .clearfix::after {
   content: "";
@@ -25,9 +21,8 @@
   clear: both;
 }
 
-.card_one,
-.card_two,
-.card_three {
+.card_side,
+.card_middle {
   float: left;
   position: relative;
 }
@@ -47,17 +42,21 @@
 }
 
 .red {
-  background-color: red;
+  background-color: #eb0037;
   float: left;
   padding: 5px;
 }
 
 .green {
-  background-color: green;
+  background-color: #00875a;
   float: left;
   padding: 5px;
   margin-left: 5px;
 }
+.green.last {
+  margin-left: 0;
+}
+
 .discount {
   position: absolute;
   left: 0;
@@ -70,25 +69,22 @@
   font-weight: 700;
 }
 .price {
-  color: red;
+  color: #ff0000;
 }
 .before {
   color: black;
   text-decoration: line-through;
 }
 
-.card_one,
-.card_three {
+.card_side {
   float: left;
 }
 
-.card_two {
+.card_middle {
   margin: 0 0.5rem;
 }
 
-.levis,
-.verde,
-.guess {
+.models {
   height: 512px;
   width: 100%;
 }
